@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,10 +29,10 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WEBGLBuild.asm.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WEBGLBuild.data.gz",
-        frameworkUrl: buildUrl + "/WEBGLBuild.asm.framework.js.gz",
-        codeUrl: buildUrl + "/WEBGLBuild.asm.js.gz",
-        memoryUrl: buildUrl + "/WEBGLBuild.asm.mem.gz",
+        dataUrl: buildUrl + "/WEBGLBuild.data",
+        frameworkUrl: buildUrl + "/WEBGLBuild.asm.framework.js",
+        codeUrl: buildUrl + "/WEBGLBuild.asm.js",
+        memoryUrl: buildUrl + "/WEBGLBuild.asm.mem",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Fighting Cats",
@@ -63,8 +63,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
       loadingBar.style.display = "block";
 
